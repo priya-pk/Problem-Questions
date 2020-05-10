@@ -1,95 +1,26 @@
 // 1st
 function prime() {
-    let arr = ["2","1", "11", "7", "22", "99", "2", "16", "43", "7"];
-    let num = arr[0];
-    document.getElementById("demo1").innerHTML = num;
-    if (num % 2 === 0 || num !== 2) {
-        document.getElementById("demo1").innerHTML = num + " is non-prime ";
-    }
-
-    for (let i = 3, s=Math.sqrt(num); i<=s; i+=2){
-        if(num % i === 0){
-            document.getElementById("demo1").innerHTML = txt;
+    let num = [3, 11, 16, 99, 56, 22];
+    let txt = "";
+    for (let j = 0; j < num.length; j++) {
+        if (num[j] < 2) {
+            return false;
         }
-        let root = Math.ceil(Math.sqrt(num[y]));
+        if (num[j]===2){
+            return true;
+        }
+        let root = Math.ceil(Math.sqrt(num[j]));
         console.log(root);
-        for (let x = 2; x < root; x++) {
-            if (num[y] % x === 0 || num[y] < 2) {
+        for (let i = 2; i < root; i++) {
+            if (num[j] % i == 0) {
                 return false;
             }
-            
         }
-        txt += num[y] + " ";
-        document.getElementById("demo1").innerHTML = txt;
+        txt += num[j] + " ";
+        document.getElementById("demo1").innerHTML = txt + " Are even numbers" ;
+
     }
 }
-
-// function prime() {
-//     let num = ["2","1", "11", "7", "22", "99", "2", "16", "43", "7"];
-//     let txt = "";
-//     for (let y = 0; y <= num.length; y++) {
-//         let root = Math.ceil(Math.sqrt(num[y]));
-//         console.log(root);
-//         for (let x = 2; x < root; x++) {
-//             if (num[y] % x === 0 || num[y] < 2) {
-//                 return false;
-//             }
-            
-//         }
-//         txt += num[y] + " ";
-//         document.getElementById("demo1").innerHTML = txt;
-//     }
-// }
-
-
-
-
-
-// function prime() {
-    // let num = ["3", "11", "7","22", "99", "2","16", "43", "7"];
-    // let txt = "";
-    // for (let j = 0; j < num.length; j++) {
-    //         let root = Math.ceil(Math.sqrt(num[j]));
-    //         console.log(root);
-    //         for (let i = 2; i < root+1; i++) {
-    //             if (num[j] % i == 0 || num[j]<=1) {
-    //                 return false;
-
-
-    //             }
-
-    //         }        txt += num[j] + " ";
-    //                 document.getElementById("demo1").innerHTML = txt;
-
-
-
-
-    //     }
-    // }
-
-
-// function prime() {
-//     let num = [3, 11, 16, 99, 2, 43, 7];
-//     let txt = "";
-//     for (let j = 0; j < num.length; j++) {
-//         if (num[j] < 2) {
-//             return false;
-//         }
-//         if (num[j]===2){
-//             return true;
-//         }
-//         let root = Math.ceil(Math.sqrt(num[j]));
-//         console.log(root);
-//         for (let i = 2; i < root; i++) {
-//             if (num[j] % i == 0) {
-//                 return false;
-//             }
-//         }
-//         txt += num[j] + " ";
-//         document.getElementById("demo1").innerHTML = txt;
-
-//     }
-// }
 
 
 // 2nd
@@ -115,23 +46,20 @@ function frequent() {
 
 // 3rd
 function swap() {
-    var sentence = "The Quick Brown Fox";
-    var captializeString = (str) => str[0].toLowerCase() + str.slice(1).toUpperCase();
-    var words = sentence.split(' ').map(captializeString).join(' ');
-    document.getElementById("demo3").innerHTML = words;
+    let stmt = "The Quick Brown Fox";
+    let captializeString = (str) => str[0].toLowerCase() + str.slice(1).toUpperCase();
+    let content = stmt.split(' ').map(captializeString).join(' ');
+    document.getElementById("demo3").innerHTML = content;
 }
 
 // 4th 
 function sumOfSquares() {
     let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
     let total = 0;
-    for (let m = 0; m <= arr.length; m++) {
-        total += Math.pow(arr[i],2);
+    for (let m = 0; m < arr.length; m++) {
+        total += arr[m]*arr[m];
         document.getElementById("demo4").innerHTML = total;
-
-          // i = arr.length;
-        // while(i--)
-     }
+    }
 }
 
 // 5th
@@ -141,7 +69,7 @@ function oddOrEven() {
     for (let k = 0; k <= 15; k++) {
         if (k % 2 === 0) {
             stmt1 += k + " , ";
-            document.getElementById("demo5").innerHTML = stmt1 + " Are even numbers. " ;
+            document.getElementById("demo5").innerHTML = stmt1 + " Are even numbers. ";
             console.log(k + " is even");
         }
         else {
@@ -151,3 +79,4 @@ function oddOrEven() {
         }
     }
 }
+
