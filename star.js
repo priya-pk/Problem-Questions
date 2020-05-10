@@ -48,16 +48,15 @@ function alphabetic() {
 //9th
 
 function javaa() {
-  let string = "Javascript";
+  let string = "Javascript".split('');
   let content ="";
-  for (let x of string){ 
-    for( let y of string){
-      content += content.concat(string[]); 
+  for (let [index,value] of string.entries()){ 
+    for( let i=0; i<=index; i++){
+      content += string[i]; 
     }
     content +="<br>"
   }
     document.getElementById("demo9").innerHTML = content;
-    console.log(content);
   } 
 
 
@@ -65,11 +64,13 @@ function javaa() {
 //10th
 
 function star() {
+  let star="";
   for (let i = 0; i <= 3; i++) {
     for (let j = 0; j <= i; j++) {
-      document.write("*");
+      star += "*";
     }
-    document.write("<br>");
+    star += "<br>";
   }
+  document.getElementById("demo10").innerHTML = star ;
 }
 
