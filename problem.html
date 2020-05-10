@@ -1,69 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problems</title>
 </head>
 <style>
-    button{
+    button {
         background-color: rgba(0, 17, 255, 0.705);
-        color : white;
+        color: white;
         border-radius: 50px;
         padding: 8px;
         letter-spacing: 2px;
         line-height: 15px;
         border: none;
+        margin-left: 40px;
+    }
+    .box{
+        padding-left: 20px;
+    }
+    p{
+        margin-left: 20px;
     }
 </style>
+
 <body>
-    <h3>1. Checking Prime No.</h3>
-    <p id="demo1"></p>
-    <button onclick="prime()">Check</button>
+    <div class="box">
+        <h3>1. Checking Prime No.</h3>
+        <p id="demo1"></p>
+        <button onclick="prime()">Check</button>
 
-    <h3>2. Checking Most Frequent Item</h3>
-    <p id="demo2"></p>
-    <button onclick="frequent()">Check</button>
+        <h3>2. Checking Most Frequent Item</h3>
+        <p id="demo2"></p>
+        <button onclick="frequent()">Check</button>
 
-    <h3>3. Swaping the case</h3>
-    <p id="demo3"></p>
-    <button onclick="swap()">Check</button>
+        <h3>3. Swaping the case</h3>
+        <p id="demo3"></p>
+        <button onclick="swap()">Check</button>
 
-    <h3>4. Find Sum of Squares</h3>
-    <p id="demo4"></p>
-    <button onclick="sumOfSquares()">Check</button>
+        <h3>4. Find Sum of Squares</h3>
+        <p id="demo4"></p>
+        <button onclick="sumOfSquares()">Check</button>
 
-    <h3>5. Find Odd Or Even</h3>
-    <p id="demo5"></p>
-    <p id="demo55"></p>
-    <button onclick="oddOrEven()">Check</button>
+        <h3>5. Find Odd Or Even</h3>
+        <p id="demo5"></p>
+        <p id="demo55"></p>
+        <button onclick="oddOrEven()">Check</button>
 
-    <h3>6. Truncating String</h3>
-    <input  type="text" id="inptxt">
-    <p id="demo6"></p>
-    <button onclick="truncate()">Check</button>
-    
-    <h3>7. Find Greatest Number</h3>
-    <p id="demo7"></p>
-    <button onclick="findLarge()">Check</button>
+        <h3>6. Truncating String</h3>
+        <input type="text" id="inptxt">
+        <p id="demo6"></p>
+        <button onclick="truncate()">Check</button>
 
-    <h3>8. Alphabetic Order</h3>
-    <p id="demo8"></p>
-    <button onclick="alphabetics()">Check</button>
-    <h5>OR</h5>
-    <input  type="text" id="alph"> 
-    <p id="demo88"></p>
-    <button onclick="alphabetic()">Check</button>
-    
-    <h3>9. JavaScript Sequence</h3>
-    <p id="demo9"></p>
-    <button onclick="javaa()">Check</button>
+        <h3>7. Find Greatest Number</h3>
+        <p id="demo7"></p>
+        <button onclick="findLarge()">Check</button>
 
-    <h3>10. Star Sequence</h3>
-    <p id="demo10"></p>
-    <button onclick="star()">Check</button>
+        <h3>8. Alphabetic Order</h3>
+        <p id="demo8"></p>
+        <button onclick="alphabetics()">Check</button>
+        <h5>OR</h5>
+        <input type="text" id="alph">
+        <p id="demo88"></p>
+        <button onclick="alphabetic()">Check</button>
+
+        <h3>9. JavaScript Sequence</h3>
+        <p id="demo9"></p>
+        <button onclick="javaa()">Check</button>
+
+        <h3>10. Star Sequence</h3>
+        <p id="demo10"></p>
+        <button onclick="star()">Check</button>
+    </div>
 
     <script src="problem1.js"></script>
     <script src="problem2.js"></script>
 </body>
+
 </html>
